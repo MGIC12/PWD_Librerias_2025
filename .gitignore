@@ -1,0 +1,8 @@
+# ======== ARCHIVOS Y CARPETAS A IGNORAR ========
+# Ignorar archivos de app1
+
+# Dependencias de Composer
+vendor/
+# Variables de entorno (nunca subir claves privadas)
+.env
+
