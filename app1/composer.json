@@ -1,0 +1,19 @@
+{
+    "name": "benja/proyecto_stripe",
+    "description": "Proyecto de prueba con stripe",
+    "autoload": {
+        "psr-4": {
+            "Benja\\ProyectoStripe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Benjamin de la fuente",
+            "email": "206235917+Ibenjamindlf@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "stripe/stripe-php": "^18.0",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
