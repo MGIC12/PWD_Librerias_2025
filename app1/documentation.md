@@ -50,8 +50,10 @@ El codigo no habla directamente con la API, sino que se usa la librería stripe-
 ## El flujo completo del código:
 C:\xampp\htdocs\proyecto_stripe\
 │
-├── index.php               ← muestra el botón de pago
-├── create_checkout.php     ← crea la sesión de Stripe y redirige al checkout
+├── index.php               ← muestra el botón de pago.
+
+├── create_checkout.php     ← crea la sesión de Stripe y redirige al checkout.
+
 ├── success.php             ← página de éxito (cuando el pago se completa)
 ├── cancel.php              ← página de cancelación (cuando el usuario cancela)
 │
