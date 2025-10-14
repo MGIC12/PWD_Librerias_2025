@@ -54,16 +54,26 @@ C:\xampp\htdocs\proyecto_stripe\
 
 ├── create_checkout.php     ← crea la sesión de Stripe y redirige al checkout.
 
-├── success.php             ← página de éxito (cuando el pago se completa)
-├── cancel.php              ← página de cancelación (cuando el usuario cancela)
+├── success.php             ← página de éxito (cuando el pago se completa).
+
+├── cancel.php              ← página de cancelación (cuando el usuario cancela).
+
 │
-├── composer.json           ← archivo de configuración de Composer
-├── composer.lock           ← versiones exactas instaladas
+
+├── composer.json           ← archivo de configuración de Composer.
+
+├── composer.lock           ← versiones exactas instaladas.
+
 │
-├── /vendor/                ← carpeta donde Composer instala las librerías
-│   ├── autoload.php        ← carga automática de todas las librerías
-│   ├── stripe/stripe-php/  ← librería de Stripe
-│   └── composer/           ← archivos internos de Composer
+
+├── /vendor/                ← carpeta donde Composer instala las librerías.
+
+│   ├── autoload.php        ← carga automática de todas las librerías.
+
+│   ├── stripe/stripe-php/  ← librería de Stripe.
+
+│   └── composer/           ← archivos internos de Composer.
+
 
 ---
 
@@ -90,12 +100,20 @@ C:\xampp\htdocs\proyecto_stripe\
 ---
 
 ## Flujo de trabajo (PHP-API):
-Código PHP
+Código PHP.
+
    ↓
-Librería stripe-php (maneja la comunicación)
+
+Librería stripe-php (maneja la comunicación).
+
    ↓
-API de Stripe (recibe clave y datos del pago)
+
+API de Stripe (recibe clave y datos del pago).
+
    ↓
-Servidores de Stripe (procesan y responden)
+
+Servidores de Stripe (procesan y responden).
+
    ↓
-Respuesta JSON convertida en objetos PHP
+
+Respuesta JSON convertida en objetos PHP.
