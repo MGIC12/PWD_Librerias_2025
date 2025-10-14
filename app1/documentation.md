@@ -94,9 +94,7 @@ C:\xampp\htdocs\proyecto_stripe\
 
     Llama a la API de Stripe a través de la librería stripe-php para crear una Checkout Session:
 
-    ```bash
         $session = \Stripe\Checkout\Session::create([...]);
-    ```
 
     Stripe devuelve una URL segura donde el cliente hará el pago.
 
@@ -119,7 +117,7 @@ C:\xampp\htdocs\proyecto_stripe\
 4.success.php / cancel.php
 
     muestra un mensaje dependiendo de que haya sucecido (si la operacion fue exitosa o no).
-    
+
 
 ---
 
