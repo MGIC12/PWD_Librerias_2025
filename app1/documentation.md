@@ -80,23 +80,46 @@ C:\xampp\htdocs\proyecto_stripe\
 
 ## Flujo de trabajo del código paso a paso:
 1.El usuario entra a index.php
+
     Ve un botón “Pagar”.
+
     Al hacer clic, se dirige a create_checkout.php.
+
+
 2.create_checkout.php
+
     Carga Composer con require 'vendor/autoload.php'.
+
     Configura la clave secreta de Stripe (setApiKey()).
+
     Llama a la API de Stripe a través de la librería stripe-php para crear una Checkout Session:
+
+    ```bash
         $session = \Stripe\Checkout\Session::create([...]);
+    ```
+
     Stripe devuelve una URL segura donde el cliente hará el pago.
+
     PHP redirige al usuario a esa URL.
+
+
 3.Stripe Checkout (servidor de Stripe)
+
     Muestra la interfaz de pago (tarjeta, email, etc.).
+
     Procesa el pago.
+
     Cuando termina, Stripe redirige automáticamente a:
+
         success.php si todo salió bien.
+
         cancel.php si se canceló el proceso.
+
+
 4.success.php / cancel.php
+
     muestra un mensaje dependiendo de que haya sucecido (si la operacion fue exitosa o no).
+    
 
 ---
 
