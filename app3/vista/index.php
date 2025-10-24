@@ -11,5 +11,6 @@
     <?php include 'structure/header.php'; ?>
 
     <h1>Prueba de defuse/php-encryption</h1>
+
 </body>
 </html>
